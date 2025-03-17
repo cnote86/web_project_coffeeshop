@@ -17,7 +17,7 @@ Este proyecto consiste en una página web diseñada para representar la cafeter�
 
 ## Descripción Detallada del Proyecto:
 
-### 🔹 Estructura HTML
+### Estructura HTML
 
 #### `HEAD`
 - Configuración del idioma: Español.
