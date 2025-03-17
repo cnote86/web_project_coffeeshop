@@ -1,78 +1,85 @@
 # Triple Espresso
-Nombre del Proyecto:Página de Triple Espresso
+## Nombre del Proyecto:
+Página web de la cafetería **Triple Espresso**, ubicada en la biblioteca TripleTen.
 
-Descripción Breve del Proyecto: Pagina Web de la cafetería Triple Expresso, de la biblioteca TripleTen.
+---
 
-Tecnología y técnicas utilizadas:
--Lenguaje de programación: HTM y CSS (hojas de estilo)
--Metodología: BEM
+## Descripción Breve del Proyecto:
+Este proyecto consiste en una página web diseñada para representar la cafetería **Triple Espresso**. Está desarrollada como parte de mi aprendizaje en HTML y CSS, aplicando la metodología BEM (Block Element Modifier) para organizar las clases de CSS de forma estructurada.
 
-Descripción detallada de la página:
+---
 
--La página de Triple Esspreso consta de los siguientes bloques principales:
+## Tecnologías y Técnicas Utilizadas:
+- Lenguajes: **HTML5** y **CSS3 (Hojas de estilo en cascada)**
+- Metodología: **BEM (Block Element Modifier)**
 
- °HEAD°
+---
 
-   * Configuración de Idioma: Español.
-   * La página se adapta al ancho de la pantalla 
-     del dispositivo por medio de la etiqueta 
-     viewport.
-   * Se agrega descripción detallada de la 
-    página por medio de las etiquetas meta con tipo de contenido: description, keywords y author para ayudar a 
-    los motores de busqueda a detrminar el contenido.
-   * Pestaña de página personalizada con el nombre de la página e icono
-   * La página cuenta con fuentes de terceros (google fonts), enlazadas por medio de la etiqueta link, además se agregaron fuentes de respaldo para cada fuente en caso de que la página no pudiera acceder a la fuente del tercero.
+## Descripción Detallada del Proyecto:
 
-BODY:
-La página fue diseñada como un infinite scroll, poniendo una sección debajo de otra  por medio del atributo display flex de ccs a cada parte de la página (encabezado, contenido principal y pie de página).
+### 🔹 Estructura HTML
 
-   ENCABEZADO:
-   * El encabezado realiza la función de dar la 
-    bienvenida al usuario, proporcionar la información 
-    general de la cafetería como horarios de apertura y 
-    dirección, como pieza principal del encabezado 
-     tenemos una moderna ilustración que ejemplifica el 
-      interior de la cafetería.
+#### `HEAD`
+- Configuración del idioma: Español.
+- Adaptación al ancho de pantalla mediante la etiqueta **viewport**.
+- Inclusión de etiquetas **meta** con información de descripción, palabras clave (**keywords**) y autor, para mejorar el SEO.
+- Título personalizado y favicon.
+- Uso de fuentes externas (Google Fonts) con respaldo en caso de error al cargarlas.
 
-    * Ilustración posicionada con  el atributo position, el resto de los elementos fueron posicionados con el atributo display: flex
+#### `BODY`
+El diseño de la página está estructurado como un **scroll infinito**, presentando cada sección una debajo de otra utilizando **display: flex** en los bloques principales (encabezado, contenido y pie de página).
 
-   * Logo de la cafeteria Triple Esspreso como primer elemento de la página, el logo fue insertado por medio de la etiqueta img y al igual que en el resto de imagenes de la página incluye una descripción de la imagen introducida por medio del atributo alt para mejorar la experiencia de navegación de personas que requieren el apoyo de lectores de voz de páginas web.
+---
 
-* El encabezado cuenta con un menú de navegación, con 3 links que llevan a cada una de las secciones de la página web (recetas, reserva una mesa y contactos) por medio del atributo id en html en cada una de las etiquetas link, fueron  agrupados en fila en la esquina superior derecha por medio del atributo en css display flex, cada link cuenta con efecto hover que cambia el color de la fuente cuando el el link es activado para mejorar la interactividad con el usuario.
+###  Encabezado:
+- Bienvenida al usuario y presentación general de la cafetería (horario y dirección).
+- Ilustración moderna del interior de la cafetería posicionada con `position`.
+- Logo de la cafetería insertado con `img` y atributo `alt` para accesibilidad.
+- Menú de navegación con tres enlaces: **Recetas**, **Reserva una mesa**, y **Contactos**, organizados en la esquina superior derecha con `display: flex`.
+- Efecto `hover` en los enlaces para mejorar la interacción.
 
-SECCIÓN RECETAS:
+---
 
-* La sección recetas está dedicada a bridar a la comunidad material externo relacionado con la preparación del café, lo que alienta a los visitantes a profundizar en el tema.
-* Todos los elementos de la sección fueron posicionados por medio de bloques div, agregando atributos a la hoja de estilos css, se agregaron 2 videos relacionados con preparación de café utilizando la etiqueta iframe, todos los atributos de estilo como ptamaño y posicionamiento fueron determinados en la hoja de estilo correspondiente respetando la metodología BEM.
+###  Sección Recetas:
+- Sección dedicada a compartir contenido educativo sobre café.
+- Dos videos insertados mediante etiquetas **iframe**, con estilos definidos en CSS usando metodología BEM.
+- Estructura organizada con **divs** y estilos aplicados desde el archivo CSS.
 
-SECCIÓN DE RESERVAS:
+---
 
-* Esta sección consta de un formulario para recolectar la información de solicitudes de reserva de los visitantes, el formulario fue insertado utilizando etiquetas input y label relacionadas entre ellas por un atributo for, todas las inputs a continuación fueron configuradas como obligatorias por medio del atributo required de la etiqueta input, se utilizaron inputs de tipo:
+###  Sección de Reservas:
+- Formulario para recibir solicitudes de reserva.
+- Campos del formulario:
+  - **Texto**: nombre del comensal.
+  - **Número**: número de comensales (mínimo 1, máximo 8).
+  - **Datetime-local**: selección de fecha y hora.
+  - **Email**: validación automática del formato.
+  - **Checkbox**: aceptación de términos y condiciones.
+- Todos los campos son obligatorios (`required`).
+- Botón de envío con efecto `hover` (opacidad disminuida al pasar el cursor).
 
-       -Text: para la entrada del nombre del comensal.
-       -Number: para la entrada de número de comensales, se han configurado un mínimo de un conmensal y un maximo de 8 por medio de los atributos min y max.
-       -Datetime-local: entrada para seleccionar fecha y hora de la reserva.
-       -Email: entrada para introducir el email de contacto del comensal, esta entrada detecta automaticamente si la información introducida no cumple con el formato de un correo electrónico válido.
-       -Checkbox: Esta entrada permite al comensal aceptar los términos de uso de la información introducida
+---
 
-* Contiene una etiqueta tipo botón que con un efecto hover que baja la opacidad del botón al ser activado.
+###  Pie de Página (Footer):
+- Logo de la cafetería.
+- Enlaces a redes sociales insertados con la etiqueta `a`.
+- Información de derechos de autor.
+- Diseño flexible con **display: flex**.
+- Elemento decorativo: círculo azul con `border-radius: 100%` y color `#2F80ED`.
 
-FOOTER:
+---
 
-*Contiene nuevamente el logo de la cafetería junto con dos links que redirigen al usuario a las redes sociales de la cafetería, incertados mediante la etiqueta link  así como la información de copyright del autor, todos los elementos fueron posicionados por medio de bloques div y el atributo display flex, a excepción del detalle en la esquina superior izquierda, un circulo azul realizado con un elemento de bloque div con los bordes redondeados al 100% y color de fondo de color azul #2F80ED declarado desde el correspondiente archivo css. 
+##  Planes de Mejora del Proyecto:
+- Fijar el menú de navegación en la parte superior.
+- Agregar un ícono de **Home** para regresar fácilmente al encabezado.
+- Bloquear fechas anteriores en el formulario de reserva.
+- Quitar el borde oscuro de los campos `input` para mejorar la estética.
+- Mejorar la experiencia de envío del formulario para que no redirija al menú de navegación.
+- Añadir un párrafo en la sección de recetas para invitar a los visitantes a compartir sus opiniones en redes sociales.
+- Convertir el texto de aceptación de términos en un enlace hacia los **Términos y Condiciones**.
 
-PLANES DE MEJORA DEL PROYECTO: 
+---
 
--fijar el menú de navegación a la parte superior de la página, hará más comoda la navegación.
-
--Agregar un icono de home al menú nav de tal manera que peudas volver al encabezado de la página facilmente si estás al final de la misma.
-
--Bloquea fecha/hora anteriores a la fecha/hora actual para evitar errores en las reservas.
-
--Cambio estético: quitar el borde oscuro de las input en form.
-
--Al terminar el formulario la página debería devolverte al link del formulario y no al menú nav, es más cómodo para los usuarios.
-
--En la sección recetas dedicaría un párrafo a animar a los visitantes a dejarnos sus opiniones en redes sociales sobre el contenido de los videos o saber si les gustaría ver contenido de algún tema en especifico relacionado con el café, para hacer un poco más dinamica la interacción con los visitantes.
-
--El texto asociado a la casilla de aceptación de términos de uso debería ser un enlace ya que debería poderte llevar a un documento con los términos y condiciones.
+##  Autor:
+**Mario Campos**  
+Desarrollador Web Principiante
